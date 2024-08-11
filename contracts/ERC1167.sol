@@ -30,3 +30,11 @@ contract ProxyFactory {
         proxies[target] = true;
     }
 }
+
+contract Implementation {
+    uint public a;
+
+    function callMe(uint _a) public{
+        a = _a;
+    }
+}
