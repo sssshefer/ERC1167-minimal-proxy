@@ -1,7 +1,11 @@
+<img src="https://github.com/user-attachments/assets/fa1bb4d7-0381-48f0-82cc-d8fbcd950270" alt="proxy-image"/>
+
 # ERC1167-minimal-proxy
 
+The **ERC1167-minimal-proxy** project showcases the implementation and usage of minimal proxy contracts (often referred to as "clones") based on the ERC1167 standard. This project provides a comprehensive guide to deploying and interacting with minimal proxy contracts, highlighting their efficiency and utility in various use cases. The project includes a simple example of deploying a proxy contract and executing functions through the proxy, demonstrating the practical benefits of this pattern.
+
 ## Table of Contents
-- [Introduction](#introduction)
+- [Introduction](#erc1167-minimal-proxy)
 - [Theory Notes](#theory-notes)
   - [What is Minimal Proxy](#what-is-minimal-proxy)
   - [What is an Opcode](#what-is-an-opcode)
@@ -11,9 +15,6 @@
   - [Contract Overview](#contract-overview)
   - [Tests](#tests)
 - [Running the Project Locally](#running-the-project-locally)
-
-## Introduction
-The **ERC1167-minimal-proxy** project showcases the implementation and usage of minimal proxy contracts (often referred to as "clones") based on the ERC1167 standard. This project provides a comprehensive guide to deploying and interacting with minimal proxy contracts, highlighting their efficiency and utility in various use cases. The project includes a simple example of deploying a proxy contract and executing functions through the proxy, demonstrating the practical benefits of this pattern.
 
 ## Theory Notes
 
@@ -72,5 +73,9 @@ To run this project locally:
     ```
 
 This setup allows you to explore the project and understand how minimal proxies work in practice.
+
+<hr/>
+
+<a href="https://ru.freepik.com/free-vector/people-carrying-arrows-opposite-directions_3585178.htm#fromView=search&page=1&position=5&uuid=e89e33a2-08b8-495c-a4b0-84963195d57b">Picture is from rawpixel.com on Freepik</a>
 
 ***Happy Hacking***
