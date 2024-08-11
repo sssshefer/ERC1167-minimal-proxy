@@ -15,11 +15,10 @@ library ERC6551BytecodeLib {
 contract ProxyFactory {
     mapping (address => bool) public proxies;
     event proxyCreated(address proxy);
+    address public lastDeployedProxy;
 
-    function make(address _impl) external{
+    function make(address _impl) external returns(address target){
         bytes memory code = ERC6551BytecodeLib.getCreationCode(_impl);
-
-        address target;
 
         assembly {
             target := create(0, add(code, 0x20), mload(code))
@@ -28,6 +27,7 @@ contract ProxyFactory {
         emit proxyCreated(target);
 
         proxies[target] = true;
+        lastDeployedProxy = target;
     }
 }
 
