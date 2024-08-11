@@ -22,10 +22,10 @@ contract ProxyFactory {
         address target;
 
         assembly {
-            target := create(0, add(code, 0x20), mload(code));
+            target := create(0, add(code, 0x20), mload(code))
         }
 
-        emit Created(target);
+        emit proxyCreated(target);
 
         proxies[target] = true;
     }
